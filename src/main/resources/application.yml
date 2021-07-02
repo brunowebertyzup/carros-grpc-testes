@@ -3,10 +3,10 @@ micronaut:
     name: carrosGrpc
 datasources:
   default:
-    url: jdbc:postgresql://localhost:5432/postgres
-    driverClassName: org.postgresql.Driver
-    username: postgres
-    password: ''
+    url: jdbc:mariadb://localhost:3307/carros_grpc
+    driverClassName: org.mariadb.jdbc.Driver
+    username: root
+    password: bruno@zup531
     schema-generate: CREATE_DROP
-    dialect: POSTGRES
+    dialect: MariaDB103Dialect
 jpa.default.properties.hibernate.hbm2ddl.auto: update
